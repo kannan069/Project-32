@@ -118,8 +118,12 @@ async function getTime(){
     var time = date.slice(11,13);
 
     if(time>= 06 && time<=19){
-        backgroundImg = loadImage("lake.png");
-    }else{
         backgroundImg = loadImage("lake1.png");
+        console.log('hey')
+    }else{
+        backgroundImg = loadImage("lake.png");
+        console.log('hi')
     }
+    // console.log(backgroundImg);
+    // console.log(time);
 }
